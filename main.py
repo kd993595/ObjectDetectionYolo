@@ -3,7 +3,7 @@ from PIL import Image
 import os.path
 
 
-path = 'turtles-in-central-park.jpg'
+path = 'turtles-in-central-park.jpg' #filename to image you want to use model on
 check_file = os.path.isfile(path)
 if not check_file:
   print("image file does not exist")
@@ -28,3 +28,4 @@ for box in result.boxes:
 
 im = Image.fromarray(result.plot()[:,:,::-1])
 im.show()
+im.save("output-"+path)
