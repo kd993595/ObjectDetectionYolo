@@ -3,7 +3,7 @@ from PIL import Image
 import os.path
 
 
-path = 'turtles-in-central-park.jpg' #filename to image you want to use model on
+path = 'pond_turtle.jpg' #filename to image you want to use model on
 check_file = os.path.isfile(path)
 if not check_file:
   print("image file does not exist")
