@@ -1,7 +1,13 @@
 # ObjectDetectionYolo
 
-'turtle_bestv8s.pt' current YOLO model based off small sample of turtle images (5 epochs,147 images, v8s model)
+main.py - holds sample code for a model.predict() with image passed through
 
-'train.py' used for training new model based off 'data.yaml' file
+train.py - holds code used for training model using ultralytics own model as basis and data pointed from 'data.yaml'
 
-'main.py' - change filename to new image to test model and see the results
+detection_onnx.py - testing code for using different types of model configuration (ie. onnx,openvino,torchlite)
+
+current model "turtle_bestv8n" trained on image data runs ~113ms per inference mAP50-95 = 0.69045
+
+"yolov8n(s).pt" models that come from ultralytics package trained off COCO dataset
+
+CUrrent testing with openvino and onnx for quantrized version of "turtle_bestv8n.pt" reduces inference time to ~60ms on laptop not tested on raspberry pi
