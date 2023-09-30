@@ -1,4 +1,5 @@
 """
+Only run on raspberry pi
 Raspberry Pi file for testing video recording on raspberry pi
 """
 from picamera2 import Picamera2, Preview, MappedArray

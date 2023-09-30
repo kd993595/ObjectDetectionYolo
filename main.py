@@ -33,4 +33,4 @@ for box in result.boxes:
 #print(rgba.shape)
 im = Image.fromarray(result.plot()[:,:,::-1])
 im.show()
-#im.save("output-"+path)
+im.save("output-"+path)

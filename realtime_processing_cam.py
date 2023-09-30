@@ -1,4 +1,5 @@
 """
+Only run on raspberry pi
 Code for realtime object detection processing
 Using model "turtle_bestv8s.pt" which is running around projected ~.41fps
 Not functional at current speed of inference time
